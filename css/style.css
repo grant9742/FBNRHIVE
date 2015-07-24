@@ -1,0 +1,310 @@
+/**
+ * Copyright 2013 dc-square GmbH
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @author: Christoph Schäbel
+ *
+ */
+
+footer {
+    padding-top: 5px;
+    
+    padding-bottom: 5px;
+    padding-left: 37%;
+    background-color: #2a2a2a;
+}
+
+#footertitle {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+#footerlogo {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.conniTop {
+    margin-left: 15px;
+    background-color: #2a2a2a;
+    width: 180px;
+}
+
+.publishTop {
+    background-color: #2a2a2a;
+    width: 160px;
+}
+
+.subTop {
+    background-color: #2a2a2a;
+    width: 215px;
+}
+
+.messagesTop {
+    background-color: #2a2a2a;
+    width: 180px;
+}
+
+div.conniArrow, div.publishArrow, div.subArrow, div.messagesArrow {
+    float: right;
+    text-align: right;
+}
+
+.checky {
+    margin-left: 22px;
+}
+
+.connection {
+    margin-bot: 20px;
+}
+
+.publish {
+
+    margin-top: 20px;
+    width: 60%;
+}
+
+.disc li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+#colorChooser {
+    width: 20px;
+    padding-left: 30px;
+    line-height: 24px;
+}
+
+/*.subs0, .mess0{
+    border-left: solid 10px #ffff00;
+    background-color: #ffffff;
+}
+.subs1, .mess1{
+    border-left: solid 10px #ff00ff;
+    background-color: #ffffff;
+}
+
+.subs2, .mess2{
+    border-left: solid 10px #00ffff;
+    background-color: #ffffff;
+}
+
+.subs3, .mess3{
+    border-left: solid 10px #f0fff0;
+    background-color: #ffffff;
+}
+
+.subs4, .mess4{
+    border-left: solid 10px #ff0f0f;
+    background-color: #ffffff;
+}*/
+
+.subText {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.messageText {
+    border: solid 1px #cccccc;
+}
+
+.closer {
+    margin-bot: 20px;
+    padding: 0;
+}
+
+.left {
+    width: 10px;
+    background-color: #ffff00;
+}
+
+.right {
+    float: right;
+    color: #bababa;
+}
+
+.colorSub {
+    background-color: #ffff00;
+}
+
+.addSubButton {
+    width: 100%;
+}
+
+.empty {
+    clear: both;
+    height: 20px;
+}
+
+#connectButton, #disconnectButton {
+    margin-top: 17px;
+}
+
+#publishButton {
+    margin-top: 17px;
+    margin-left: -10px;
+}
+
+#filterButton {
+    margin-top: 17px;
+}
+
+#subscribeButton {
+    margin-top: 17px;
+    margin-left: -30px;
+}
+
+#lwQosInput {
+    margin-top: 7px;
+    margin-left: 20px;
+    width: 50px;
+}
+
+#publishQoSInput {
+    margin-top: 7px;
+    margin-left: -5px;
+    width: 50px;
+}
+
+#QoSInput {
+    margin-top: 7px;
+    margin-left: -5px;
+    width: 50px;
+}
+
+.qos, .date, .topicM, .retain {
+    color: #bababa;
+    font-size: 12px;
+}
+
+.columns h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 23px;
+}
+
+form.custom .custom.dropdown.small {
+    width: 70px;
+}
+
+form.custom .custom.checkbox {
+    margin-left: 0.7em;
+    margin-top: 10px;
+}
+
+#connection, #publish-sub {
+    width: 100%;
+}
+
+.columns.subArrow, .columns.publishArrow, .columns.messagesArrow {
+    padding-right: 0;
+}
+
+#addSubButton {
+    margin-top: 15px;
+}
+
+#publishPanel {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+div.messageText {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row .messLine div.row, .row .subLine div.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messagesMain {
+    margin-bottom: 20px;
+}
+
+div.icon-arrow-chevron {
+    background-image: url('../assets/arrow_up.png');
+    min-height: 32px;
+    min-width: 32px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.closed div.icon-arrow-chevron {
+    background-image: url('../assets/arrow_down.png');
+}
+
+#connectionStatus {
+    margin-top: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
+
+footer.notconnected #connectionStatus {
+    background-color: #bc0000;
+}
+
+footer.connected #connectionStatus {
+    background-color: #009700;
+}
+
+footer.notconnected #disconnectButton {
+    display: none;
+}
+
+footer.connected #disconnectButton {
+    display: inline-block;
+}
+
+footer.notconnected #connectButton {
+    display: inline-block;
+}
+
+footer.connected #connectButton {
+    display: none;
+}
+
+footer.connected #connectionStatus:after {
+    content: 'connected';
+    padding-left: 40px;
+}
+
+footer.connectionbroke #connectionStatus:after {
+    content: 'disconnected';
+    padding-left: 40px;
+}
+
+.columns.subText {
+    padding-right: 2px;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.break-words {
+    word-wrap: break-word;
+}
+
